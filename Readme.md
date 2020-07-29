@@ -1,4 +1,4 @@
-# Binary Image Classifier and Organize CelebA Dataset!
+# Expression Classification via PyTorch!
 
 Hi! In this project, I will guide you to organize CK+ dataset for expression classification in PyTorch.
 
