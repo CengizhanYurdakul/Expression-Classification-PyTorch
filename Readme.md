@@ -56,7 +56,7 @@ train_load = torch.utils.data.DataLoader(dataset = train_dataset,
 ```
 ### Model Selection
 
-Since we have 7 classes, we are reducing the last layer of the MobilenetV2 model to 7. If this number is different in your dataset, you can change it.
+Since we have 7 classes, we are reducing the last layer of the MobilenetV2 model to 7. If this number is different in your dataset, you can change it. This dataset is relatively small. If the dataset you use is larger and more complex, you can use different models.
 
 ```
 ## MOBILENETV2
@@ -77,7 +77,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
 ```
 ### Training
 
-Once all the preparations have been made we can run the code. After printing the layers of the model, we can see the results for each epoch. Then we can examine the results we got from the tensorboard.
+Once all the preparations have been made we can run the code. After printing the layers of the model, we can see the results for each epoch. Then we can examine the results we got from the tensorboard. Also this dataset 
 
 ```
 Epoch 1/100, Training Loss: 2.971, Training Accuracy: 21.000, Testing Loss: 2.176, Testing Acc: 18.000, Time: 1.6267s
